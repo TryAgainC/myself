@@ -1,2 +1,1 @@
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBU0RDVlo4NTg5NzFTQUQuNDFAMTMuMjA5LjQ5LjE5NTo5MjU
-
+{"port":443,"ps":"caizhengtao.xyz_vmess_ws","tls":"tls","id":"46e475b3-6ae1-4b89-9935-20fd87080d28","aid":0,"v":2,"host":"caizhengtao.xyz","type":"none","path":"eykvvws?ed=2048","net":"ws","add":"caizhengtao.xyz","allowInsecure":0,"method":"none","peer":"caizhengtao.xyz","sni":"caizhengtao.xyz"}
