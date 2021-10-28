@@ -1,0 +1,8 @@
+示例
+./pf http 15 1000 origin.txt proxy.txt
+
+格式
+./pf 检测协议 超时(秒) 线程 输入 输出 [可选:检测地址(返回请求IP)
+
+给文件附上权限：
+sudo chmod 777 pf

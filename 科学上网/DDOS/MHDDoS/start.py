@@ -1163,13 +1163,13 @@ def downloadsocks(choice):
         try:
             r = requests.get("https://www.proxy-list.download/api/v1/get?type=socks5", timeout=5)
             f.write(r.content)
-            f.close()
+            
         except:
             pass
         try:
             r = requests.get("https://www.proxyscan.io/download?type=socks5", timeout=5)
             f.write(r.content)
-            f.close()
+            
         except:
             pass
         try:
@@ -1179,8 +1179,8 @@ def downloadsocks(choice):
             pass
         try:
             r = requests.get(
-                "http://ip.qingproxy.xyz/mf.php",
-                timeout=15)
+                "https://raw.githubusercontent.com/TryAgainC/myproxy/main/socks5.txt",
+                timeout=5)
             f.write(r.content)
         except:
             pass
@@ -1212,39 +1212,41 @@ def downloadsocks(choice):
             r = requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=http&country=all",
                              timeout=5)
             f.write(r.content)
+            
         except:
             pass
         try:
             r = requests.get("https://www.proxy-list.download/api/v1/get?type=http", timeout=5)
             f.write(r.content)
-            f.close()
+           
         except:
             pass
         try:
             r = requests.get("https://www.proxyscan.io/download?type=http", timeout=5)
             f.write(r.content)
-            f.close()
+           
         except:
             pass
         try:
             r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt", timeout=5)
             f.write(r.content)
+           
         except:
             pass
         try:
-            r = requests.get("http://api.rawhub.net/free/alive.txt", timeout=15)
+            r = requests.get("https://raw.githubusercontent.com/TryAgainC/myproxy/main/http.txt", timeout=5)
             f.write(r.content)
+           
         except:
             pass
         try:
-            r = requests.get("https://freeamp.booter.top/9527/proxy.txt", timeout=15)
+            r = requests.get("http://api.rawhub.net/free/alive.txt", timeout=5)
             f.write(r.content)
+            
         except:
-            pass            
+            pass
         try:
-            r = requests.get(
-                "http://ip.qingproxy.xyz/mf.php",
-                timeout=15)
+            r = requests.get("https://freeamp.booter.top/9527/proxy.txt", timeout=5)
             f.write(r.content)
             f.close()
         except:
