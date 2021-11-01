@@ -1,0 +1,17 @@
+BBR2
+
+wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/raw/master/bbr2.sh" && chmod +x bbr2.sh && bash bbr2.sh auto
+
+v2ray一键安装：
+
+bash <(curl -s -L https://git.io/v2ray.sh)
+
+如果提示 curl: command not found ，那是因为你的 VPS 没装 Curl
+
+##Ubuntu/Debian系统安装Curl方法
+
+apt-get update -y && apt-get install curl -y 
+
+##Centos 系统安装Curl方法
+
+yum update -y && yum install curl -y 
