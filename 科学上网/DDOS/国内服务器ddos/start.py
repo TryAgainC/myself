@@ -1088,7 +1088,7 @@ def check_socks(ms):
 
 
 def check_list(socks_file):
-    temp = open(socks_file).readlines()
+    temp = open(socks_file,encoding='ISO-8859-1').readlines()
     temp_list = []
     for i in temp:
         if i not in temp_list:
@@ -1161,6 +1161,12 @@ def downloadsocks(choice):
         except:
             pass
         try:
+            r = requests.get("https://ghproxy.com/https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt",
+                             timeout=5)
+            f.write(r.content)
+        except:
+            pass
+        try:
             r = requests.get("https://www.proxy-list.download/api/v1/get?type=socks5", timeout=5)
             f.write(r.content)
             
@@ -1207,9 +1213,79 @@ def downloadsocks(choice):
         except:
             f.close()
     if choice == "1":
-        f = open(out_file, 'wb')
+        f = open(out_file,'wb')
+        try:
+            r = requests.get("https://ghproxy.com/https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS_RAW.txt",
+                             timeout=5)
+            f.write(r.content)
+            
+        except:
+            pass
+        try:
+            r = requests.get("https://ghproxy.com/https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt",
+                             timeout=5)
+            f.write(r.content)
+            
+        except:
+            pass
+        try:
+            r = requests.get("https://ghproxy.com/https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-http%2Bhttps.txt",
+                             timeout=5)
+            f.write(r.content)
+            
+        except:
+            pass                                
+        try:
+            r = requests.get("http://www.66ip.cn/nmtq.php?getnum=300&isp=0&anonymoustype=0&start=&ports=&export=&ipaddress=&area=0&proxytype=1&api=66ip",
+                             timeout=5)
+            f.write(r.content)
+            
+        except:
+            pass
+        try:
+            r = requests.get("http://www.66ip.cn/nmtq.php?getnum=300&isp=0&anonymoustype=0&start=&ports=&export=&ipaddress=&area=0&proxytype=0&api=66ip",
+                             timeout=5)
+            f.write(r.content)
+            
+        except:
+            pass
+        try:
+            r = requests.get("http://api.89ip.cn/tqdl.html?api=1&num=5000&port=&address=&isp=",
+                             timeout=5)
+            f.write(r.content)
+            
+        except:
+            pass
+        try:
+            r = requests.get("http://www.66ip.cn/mo.php?sxb=&tqsl=1000&port=&export=&ktip=&sxa=&submit=%CC%E1++%C8%A1&textarea=http%3A%2F%2Fwww.66ip.cn%2F%3Fsxb%3D%26tqsl%3D1000%26ports%255B%255D2%3D%26ktip%3D%26sxa%3D%26radio%3Dradio%26submit%3D%25CC%25E1%2B%2B%25C8%25A1",
+                             timeout=5)
+            f.write(r.content)
+            
+        except:
+            pass            
+        try:
+            r = requests.get("https://www.padaili.com/proxyapi?api=ayTqmsiqgdwVWUbp23hO7p7dPtaZT9ZD&num=1000&type=3&order=xiangying",
+                             timeout=5)
+            f.write(r.content)
+            
+        except:
+            pass
+        try:
+            r = requests.get("https://www.padaili.com/proxyapi?api=ayTqmsiqgdwVWUbp23hO7p7dPtaZT9ZD&num=1000&type=3&order=jiance",
+                             timeout=5)
+            f.write(r.content)
+            
+        except:
+            pass
         try:
             r = requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=http&country=all",
+                             timeout=5)
+            f.write(r.content)
+            
+        except:
+            pass
+        try:
+            r = requests.get("https://ghproxy.com/https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS_RAW.txt",
                              timeout=5)
             f.write(r.content)
             
@@ -1240,6 +1316,18 @@ def downloadsocks(choice):
         except:
             pass
         try:
+            r = requests.get("https://ghproxy.com/https://raw.githubusercontent.com/mmpx12/proxy-list/master/http.txt", timeout=5)
+            f.write(r.content)
+           
+        except:
+            pass
+        try:
+            r = requests.get("https://ghproxy.com/https://raw.githubusercontent.com/mmpx12/proxy-list/master/https.txt", timeout=5)
+            f.write(r.content)
+           
+        except:
+            pass
+        try:
             r = requests.get("http://api.rawhub.net/free/alive.txt", timeout=5)
             f.write(r.content)
             
@@ -1251,6 +1339,7 @@ def downloadsocks(choice):
             f.close()
         except:
             f.close()
+
 
 
 def main():
@@ -1289,7 +1378,7 @@ def main():
     else:
         socks_type = 5
     threads = int(sys.argv[4])
-    proxies = open(out_file).readlines()
+    proxies = open(out_file,encoding='ISO-8859-1').readlines()
     if method == "slow":
         conn = threads
         proxydl(out_file, socks_type)
@@ -1326,7 +1415,7 @@ def proxydl(out_file, socks_type):
 
     print("downloading {}'s proxy plz wait".format(socktyper))
     downloadsocks(choice)
-    proxies = open(str(out_file)).readlines()
+    proxies = open(str(out_file),encoding='ISO-8859-1').readlines()
     check_list(out_file)
     check_socks(ms)
 
