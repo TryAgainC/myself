@@ -1,0 +1,27 @@
+1、下载，要debian12+  或者 Ubuntu 22.04+
+bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
+
+备份 bash <(curl -Ls https://github.com/TryAgainC/3xui/master/install.sh)
+
+
+2、记录账号密码，申请SSL，18直接申请
+
+3、登陆后把面板url路径改成根路径
+
+4、改账号密码
+
+5、添加节点
+
+1.协议：trojan
+
+2.传输：TCP
+
+3.安全：TLS
+
+4.SNI：mpvideo.qpic.cn
+
+5.utls：None
+
+6.ALPN：删除所有
+
+7.从面板设置证书

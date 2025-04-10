@@ -1,0 +1,2 @@
+python smsboom.py -update
+python smsboom.py run -t 64 -p 13599029430 -s -i 20	

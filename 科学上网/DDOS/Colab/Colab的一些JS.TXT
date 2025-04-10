@@ -1,0 +1,12 @@
+setInterval(() => document.querySelector("#search_form_DeliveryMoneyLog > a > span > span.l-btn-text").click(), 300000);
+
+
+一段时间不动提示是否在面前？
+function aaa(){
+    document.querySelector("body > colab-recaptcha-dialog").shadowRoot.querySelector("mwc-dialog > mwc-button").click()
+}
+setInterval(aaa,10000);
+
+
+提示太久不动或者时间到了，需要取消或者重新连接。重新连接方式：
+document.querySelector("#ok")

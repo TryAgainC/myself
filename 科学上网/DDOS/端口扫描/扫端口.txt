@@ -1,0 +1,5 @@
+sudo apt-get install nmap 
+
+
+扫描所有端口：使用 -p- 选项扫描所有 65535 个端口：
+nmap -p- <目标IP>

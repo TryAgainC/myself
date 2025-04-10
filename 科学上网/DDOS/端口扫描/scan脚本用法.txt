@@ -1,0 +1,1 @@
+目录下扫描ip.txt文件，一个ip一行，对应ip开启的端口输出到result.txt文件

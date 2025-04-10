@@ -1,0 +1,8 @@
+网易云api : https://different-violet-fall.glitch.me
+接口文档：https://zaincheung.gitee.io/netease-cloud/#/document/
+pwd = 4a56c90336f4da4c856907009cb5000d
+
+
+f8702c2fb6accd17d3f203a4002d8740
+
+MUSIC_U=d36f3ecab23c2aa0d81224f305336d58ab859ce0b8b0467da2d095dfd95b5552993166e004087dd3d78b6050a17a35e705925a4e6992f61d07c385928f88e8de
