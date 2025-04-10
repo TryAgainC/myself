@@ -1,6 +1,0 @@
-常用脚本工具包
-
-yum install -y curl wget 2> /dev/null || apt install -y curl wget
-
-wget -O jcnfbox.sh https://raw.githubusercontent.com/Netflixxp/jcnf-box/main/jcnfbox.sh && chmod +x jcnfbox.sh && clear && ./jcnfbox.sh
-
